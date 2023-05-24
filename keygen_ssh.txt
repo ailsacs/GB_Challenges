@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#criar key pair
+
+#creating local rsa key pair. 
+
+ssh-keygen -f challenges_aws -t rsa
+
+#move key pair dir ~/.ssh/
+
+mv challenges_aws ~/.ssh/
+
+
+#copy key pair to provider.
+#scp "key_par name / path" "username"@"provider ip address":/"path"
+#scp challenges_aws usuario2@aws:path/*
