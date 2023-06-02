@@ -1,0 +1,9 @@
+---
+
+plugin: aws_ec2
+aws_profile: default
+regions:
+  - us-east-1
+compose:
+  #used public IP addres to simple connect with hot
+  ansible_host: public_dns_address
